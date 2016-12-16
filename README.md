@@ -1,3 +1,3 @@
 # presentations
 
-Starting point for presentation on Aurelia for dallas.js
+Presentación de Aurelia para la DevFest UADE 17/12
