@@ -229,7 +229,7 @@ export class MyShow {
       </section>
       <section>
         <section>
-          <h2>Dependency Injection</h2>
+          <h2>Injección de dependencias</h2>
           <pre><code data-trim class="jscode">
 import {HttpClient} from 'aurelia-http-client';
 import {UserDetails} from 'user';
@@ -242,7 +242,7 @@ export class Customer{
   }
 }
             </code></pre>
-          <p>Or using <span class="jscode">ES7</span> decorators</p>
+          <p>O usando <span class="jscode">ES7</span> decorators</p>
           <pre><code data-trim class="jscode">
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-http-client';
@@ -308,14 +308,14 @@ export class Welcome{}
 </code></pre>
         </section>
         <section>
-          <p>Bind any property using <span class="htmlcode">.bind</span></p>
+          <p>Haciendo Bind a una propiedad usando <span class="htmlcode">.bind</span></p>
           <pre><code class="html"><!--Two-way binding for form elements-->
 <input type="text" value.bind="firstName">
 
 <!--One-way binding for others-->
 <a href.bind="url">Aurelia</a></pre></code>
             <div>
-              <p>Specify the databinding mode</p>
+              <p>Especificando el modo de Binding</p>
               <pre><code class="html"><!--Two-way binding-->
 <input type="text" value.two-way="firstName">
 
@@ -328,7 +328,7 @@ export class Welcome{}
             </div>
         </section>
         <section>
-          <h3>Behavior binding</h3>
+          <h3>Binding de comportamiento</h3>
           <p>UI events</p>
           <pre><code class="html"><!--One event handler by event-->
 <button click.trigger="sayHello()">Say Hello</button>
@@ -341,14 +341,14 @@ export class Welcome{}
 </code></pre>
         </section>
         <section>
-          <h3>String Interpolation</h3>
-          <p>Simple value</p>
+          <h3>Interpolación de texto</h3>
+          <p>Valores simples</p>
           <pre><code class="html"><span>${user.firstName} ${user.lastName}</span></code></pre>
-          <p>Expressions handling</p>
+          <p>Expresiones</p>
           <pre><code class="html"><div class="${color} ${isHappy ? 'green' : 'red'}"></div></code></pre>
         </section>
         <section>
-          <h3>Select component</h3>
+          <h3>Componente de selección</h3>
           <br/>
           <pre><code class="html">
 <select value.bind="favoriteColor">
@@ -386,7 +386,7 @@ export class Welcome{}
 </code></pre>
         </section>
         <section>
-          <h3>Screen Activation Lifecycle</h3>
+          <h3>Ciclo de vida para activacion de paginas</h3>
           <pre><code class="jscode">export class Home {
 
   //Can we navigate to this page
@@ -403,14 +403,14 @@ export class Welcome{}
 
 }
 </code></pre>
-          <p>Supports async operations through <span class="jscode">ES6 Promises</span></p>
+          <p>Soporta <span class="jscode">ES6 Promises</span></p>
         </section>
         <section>
-          <h3>And More</h3>
+          <h3>Y más...</h3>
           <ul>
-            <li>Child routers</li>
-            <li>Dynamic routing</li>
-            <li>Custom navigation pipeline (filter, authentication)</li>
+            <li>Routers anidadas</li>
+            <li>Routeo dinámico</li>
+            <li>Pipelines de navegación (filtros, autenticación)</li>
           </ul>
         </section>
       </section>
